@@ -1,1 +1,2 @@
-# 高级数据库练习
+# 
+Advanced Database Technology and Applications
