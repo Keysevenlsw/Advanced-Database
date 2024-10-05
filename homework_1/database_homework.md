@@ -2,20 +2,20 @@
 
 ***
 
-> 学院：省级示范性软件学院
-> 题目：《实验一：索引&文档操作》
-> 姓名：刘顺文
-> 学号：2200770061
-> 班级：软工2202
-> 日期：2024-09-21
-> 实验环境：Elasticsearch
+> **学院：省级示范性软件学院**
+> **题目：《实验一：索引&文档操作》**
+> **姓名：刘顺文**
+> **学号：2200770061**
+> **班级：软工2202**
+> **日期：2024-09-21**
+> **实验环境：Elasticsearch**
 
 ***
 ## 一、实验目的：
-> 1、掌握Elasticsearch 安装IK分词器的安装方法
-> 2、掌握Elasticsearch 索引操作方法
-> 3、掌握Elasticsearch 文档操作训练
-> 4、Elasticsearch 高级查询与DSL训练
+> **1、掌握Elasticsearch 安装IK分词器的安装方法**
+> **2、掌握Elasticsearch 索引操作方法**
+> **3、掌握Elasticsearch 文档操作训练**
+> **4、Elasticsearch 高级查询与DSL训练**
 ***
 ## 二、实验内容：
 ### 1、索引操作练习：
@@ -64,7 +64,7 @@ PUT /user_information
 - ==**成功操作截图：**==
 > 使用GET请求看到索引已创建
 > 
-[![pAltiVA.png](https://s21.ax1x.com/2024/09/26/pAltiVA.png)](https://imgse.com/i/pAltiVA)
+![屏幕截图 2024-09-26 222649](assets/屏幕截图 2024-09-26 222649.png)
 ***
 #### 1.2.产品目录(Product Catalog)索引
 - ==**代码：**==
@@ -111,7 +111,7 @@ PUT /product_catalog
 - ==**成功操作截图：**==
 > 使用GET请求看到索引已创建
 > 
-[![pAltexS.png](https://s21.ax1x.com/2024/09/26/pAltexS.png)](https://imgse.com/i/pAltexS)
+![屏幕截图 2024-09-26 223414](assets/屏幕截图 2024-09-26 223414.png)
 ***
 #### 1.3.订单记录(Order Records)索引
 - ==**代码：**==
@@ -158,7 +158,7 @@ PUT /order_records
 - ==**成功操作截图：**==
 > 使用GET请求看到索引已创建
 > 
-[![pAlt0aR.png](https://s21.ax1x.com/2024/09/26/pAlt0aR.png)](https://imgse.com/i/pAlt0aR)
+![屏幕截图 2024-09-26 224537](assets/屏幕截图 2024-09-26 224537.png)
 ***
 #### 1.4.修改索引
 - ==**代码：**==
@@ -176,7 +176,7 @@ PUT /user_information/_mapping
 - ==**成功操作截图：**==
 > 使用GET请求看到映射字段已添加
 > 
-[![pAltTRf.png](https://s21.ax1x.com/2024/09/26/pAltTRf.png)](https://imgse.com/i/pAltTRf)
+![屏幕截图 2024-09-26 225837](assets/屏幕截图 2024-09-26 225837.png)
 ***
 #### 1.5.删除索引
 - ==**代码：**==
@@ -187,7 +187,7 @@ DELETE /user_information
 - ==**成功操作截图：**==
 > 使用GET请求发现找不到索引，证明索引已被删除
 > 
-[![pAltbQS.png](https://s21.ax1x.com/2024/09/26/pAltbQS.png)](https://imgse.com/i/pAltbQS)
+![屏幕截图 2024-09-26 230328](assets/屏幕截图 2024-09-26 230328.png)
 ***
 ### 2、文档操作练习：
 #### 2.1.用户信息数据
@@ -237,7 +237,7 @@ POST /user_information/_bulk
 { "user_id": "020", "name": "Tina Baker", "email": "tina.baker@example.com", "date_of_birth": "1990-11-11", "gender": "female", "address": "1717 Pinecone Rd, Mountaintown, USA", "phone_number": "012-345-6789", "registration_date": "2024-08-18", "last_login": "2024-09-18", "status": "active" }
 ```
 - ==**成功操作截图：**==
-[![pAlU9AA.png](https://s21.ax1x.com/2024/09/27/pAlU9AA.png)](https://imgse.com/i/pAlU9AA)
+![屏幕截图 2024-09-27 001529](assets/屏幕截图 2024-09-27 001529.png)
 ***
 #### 2.2.产品目录数据
 - ==**代码：**==
@@ -286,7 +286,7 @@ POST /product_catalog/_bulk
 { "product_id": "P020", "name": "Electric Scooter", "description": "Eco-friendly electric scooter with long battery life.", "category": "Transportation", "price": 299.99, "stock_quantity": 50, "supplier": "EcoRide", "release_date": "2024-08-10", "tags": ["electric", "scooter", "transportation"], "rating": 4.7 }
 ```
 - ==**成功操作截图：**== 
-[![pAlUS7d.png](https://s21.ax1x.com/2024/09/27/pAlUS7d.png)](https://imgse.com/i/pAlUS7d)
+![屏幕截图 2024-09-27 001258](assets/屏幕截图 2024-09-27 001258.png)
 ***
 #### 2.3.订单记录数据
 - ==**代码：**==
@@ -335,7 +335,7 @@ POST /order_records/_bulk
 { "order_id": "OR020", "customer_id": "C020", "order_date": "2024-04-14", "status": "completed", "total_amount": 220.00, "items": [{ "product_id": "P021", "quantity": 11, "price": 20.00 }], "shipping_address": "1717 Maple Ave, Seaside, USA", "payment_method": "bank_transfer", "shipping_date": "2024-04-15", "delivery_date": "2024-04-19" }
 ```
 - ==**成功操作截图：**== 
-[![pAlNz0H.png](https://s21.ax1x.com/2024/09/27/pAlNz0H.png)](https://imgse.com/i/pAlNz0H)
+![屏幕截图 2024-09-27 000723](assets/屏幕截图 2024-09-27 000723.png)
 ***
 #### 2.4.查看文档
 - ==**代码：**==
@@ -344,7 +344,7 @@ POST /order_records/_bulk
 GET /user_information/_doc/001
 ```
 - ==**成功操作截图：**==
-[![pAlUCtI.png](https://s21.ax1x.com/2024/09/27/pAlUCtI.png)](https://imgse.com/i/pAlUCtI)
+![屏幕截图 2024-09-27 001834](assets/屏幕截图 2024-09-27 001834.png)
 ***
 #### 2.5.修改文档
 - ==**代码：**==
@@ -358,7 +358,7 @@ POST /user_information/_update/001
 }
 ```
 - ==**成功操作截图：**==
-[![pAlUF9P.png](https://s21.ax1x.com/2024/09/27/pAlUF9P.png)](https://imgse.com/i/pAlUF9P)
+![屏幕截图 2024-09-27 002328](assets/屏幕截图 2024-09-27 002328.png)
 ***
 #### 2.6.删除文档
 - ==**代码：**==
@@ -367,7 +367,7 @@ POST /user_information/_update/001
 DELETE /user_information/_doc/001
 ```
 - ==**成功操作截图：**==
-[![pAlUaNR.png](https://s21.ax1x.com/2024/09/27/pAlUaNR.png)](https://imgse.com/i/pAlUaNR)
+![屏幕截图 2024-09-27 002535](assets/屏幕截图 2024-09-27 002535.png)
 ***
 ### 3、高级查询&DSL练习：
 #### 3.1.用户信息数据
@@ -384,7 +384,7 @@ GET /user_information/_search?_source=name,email
 }
 ```
 - ==**成功操作截图：**==
-[![pAlg0PS.png](https://s21.ax1x.com/2024/09/27/pAlg0PS.png)](https://imgse.com/i/pAlg0PS)
+![屏幕截图 2024-09-27 145917](assets/屏幕截图 2024-09-27 145917.png)
 ##### 2. 查找最后登录日期在2024年9月1日之后的所有活跃用户。
 - ==**代码：**==
 ``` json
@@ -401,7 +401,7 @@ GET /user_information/_search
 }
 ```
 - ==**成功操作截图：**==
-[![pAl2uss.png](https://s21.ax1x.com/2024/09/27/pAl2uss.png)](https://imgse.com/i/pAl2uss)
+![屏幕截图 2024-09-27 151803](assets/屏幕截图 2024-09-27 151803.png)
 ##### 3. 查询住在"Anytown"的用户。
 - ==**代码：**==
 ``` json
@@ -415,7 +415,7 @@ GET /user_information/_search
 }
 ```
 - ==**成功操作截图：**==
-[![pAl24TP.png](https://s21.ax1x.com/2024/09/27/pAl24TP.png)](https://imgse.com/i/pAl24TP)
+![屏幕截图 2024-09-27 153651](assets/屏幕截图 2024-09-27 153651.png)
 ##### 4. 查找出生日期在1990年之后的所有用户。
 - ==**代码：**==
 ``` json
@@ -431,7 +431,7 @@ GET /user_information/_search
 }
 ```
 - ==**成功操作截图：**==
-[![pAl2Xmn.png](https://s21.ax1x.com/2024/09/27/pAl2Xmn.png)](https://imgse.com/i/pAl2Xmn)
+![屏幕截图 2024-09-27 154031](assets/屏幕截图 2024-09-27 154031.png)
 ##### 5. 查询所有状态为"inactive"的用户。
 - ==**代码：**==
 ``` json
@@ -445,7 +445,7 @@ GET /user_information/_search
 }
 ```
 - ==**成功操作截图：**==
-[![pAlRek6.png](https://s21.ax1x.com/2024/09/27/pAlRek6.png)](https://imgse.com/i/pAlRek6)
+![屏幕截图 2024-09-27 154203](assets/屏幕截图 2024-09-27 154203.png)
 ##### 6. 查找注册日期在2023年1月1日到2023年12月31日之间的用户。
 - ==**代码：**==
 ``` json
@@ -462,7 +462,7 @@ GET /user_information/_search
 }
 ```
 - ==**成功操作截图：**==
-[![pAlRG7t.png](https://s21.ax1x.com/2024/09/27/pAlRG7t.png)](https://imgse.com/i/pAlRG7t)
+![屏幕截图 2024-09-27 154551](assets/屏幕截图 2024-09-27 154551.png)
 ##### 7. 查询名字为"Bob Smith"的用户的详细信息。
 - ==**代码：**==
 ``` json
@@ -476,7 +476,7 @@ GET /user_information/_search
 }
 ```
 - ==**成功操作截图：**==
-[![pAlRYAP.png](https://s21.ax1x.com/2024/09/27/pAlRYAP.png)](https://imgse.com/i/pAlRYAP)
+![屏幕截图 2024-09-27 154724](assets/屏幕截图 2024-09-27 154724.png)
 ##### 8. 查找电话号码以"123"开头的用户。
 - ==**代码：**==
 ``` json
@@ -490,7 +490,7 @@ GET /user_information/_search
 }
 ```
 - ==**成功操作截图：**==
-[![pAlRghT.png](https://s21.ax1x.com/2024/09/27/pAlRghT.png)](https://imgse.com/i/pAlRghT)
+![屏幕截图 2024-09-27 155009](assets/屏幕截图 2024-09-27 155009.png)
 ##### 9. 查询电子邮件域为"example.com"的所有用户。
 - ==**代码：**==
 ``` json
@@ -504,7 +504,7 @@ GET /user_information/_search
 }
 ```
 - ==**成功操作截图：**==
-[![pAlRXge.png](https://s21.ax1x.com/2024/09/27/pAlRXge.png)](https://imgse.com/i/pAlRXge)
+![屏幕截图 2024-09-27 155842](assets/屏幕截图 2024-09-27 155842.png)
 ##### 10. 查找所有名字中包含"Lee"的用户。
 - ==**代码：**==
 ``` json
@@ -518,7 +518,7 @@ GET /user_information/_search
 }
 ```
 - ==**成功操作截图：**==
-[![pAlWD2D.png](https://s21.ax1x.com/2024/09/27/pAlWD2D.png)](https://imgse.com/i/pAlWD2D)
+![屏幕截图 2024-09-27 160000](assets/屏幕截图 2024-09-27 160000.png)
 ***
 #### 3.2.产品目录数据
 ##### 1. 查询所有类别为"Audio"的产品名称和价格。
@@ -534,7 +534,7 @@ GET /product_catalog/_search?_source=name,price
 }
 ```
 - ==**成功操作截图：**==
-[![pAlhAmj.png](https://s21.ax1x.com/2024/09/27/pAlhAmj.png)](https://imgse.com/i/pAlhAmj)
+![屏幕截图 2024-09-27 163138](assets/屏幕截图 2024-09-27 163138.png)
 ##### 2. 查找价格高于50美元的所有产品。
 - ==**代码：**==
 ``` json
@@ -550,7 +550,7 @@ GET /product_catalog/_search
 }
 ```
 - ==**成功操作截图：**==
-[![pAlfq6e.png](https://s21.ax1x.com/2024/09/27/pAlfq6e.png)](https://imgse.com/i/pAlfq6e)
+![屏幕截图 2024-09-27 163151](assets/屏幕截图 2024-09-27 163151.png)
 ##### 3. 查询库存数量少于100的产品。
 - ==**代码：**==
 ``` json
@@ -566,7 +566,7 @@ GET /product_catalog/_search
 }
 ```
 - ==**成功操作截图：**==
-[![pAlfzkt.png](https://s21.ax1x.com/2024/09/27/pAlfzkt.png)](https://imgse.com/i/pAlfzkt)
+![屏幕截图 2024-09-27 163417](assets/屏幕截图 2024-09-27 163417.png)
 ##### 4. 查找评分高于4.5的所有产品。
 - ==**代码：**==
 ``` json
@@ -582,7 +582,7 @@ GET /product_catalog/_search
 }
 ```
 - ==**成功操作截图：**==
-[![pAlhE0s.png](https://s21.ax1x.com/2024/09/27/pAlhE0s.png)](https://imgse.com/i/pAlhE0s)
+![屏幕截图 2024-09-27 163504](assets/屏幕截图 2024-09-27 163504.png)
 ##### 5. 查询标签中包含"smart"的所有产品。
 - ==**代码：**==
 ``` json
@@ -596,7 +596,7 @@ GET /product_catalog/_search
 }
 ```
 - ==**成功操作截图：**==
-[![pAlhV7n.png](https://s21.ax1x.com/2024/09/27/pAlhV7n.png)](https://imgse.com/i/pAlhV7n)
+![屏幕截图 2024-09-27 163555](assets/屏幕截图 2024-09-27 163555.png)
 ##### 6. 查找供应商为"TechCorp"的产品。
 - ==**代码：**==
 ``` json
@@ -610,7 +610,7 @@ GET /product_catalog/_search
 }
 ```
 - ==**成功操作截图：**==
-[![pAlhekq.png](https://s21.ax1x.com/2024/09/27/pAlhekq.png)](https://imgse.com/i/pAlhekq)
+![屏幕截图 2024-09-27 163745](assets/屏幕截图 2024-09-27 163745.png)
 ##### 7. 查询发布日期在2023年6月1日之后的所有产品。
 - ==**代码：**==
 ``` json
@@ -626,7 +626,7 @@ GET /product_catalog/_search
 }
 ```
 - ==**成功操作截图：**==
-[![pAlhmt0.png](https://s21.ax1x.com/2024/09/27/pAlhmt0.png)](https://imgse.com/i/pAlhmt0)
+![屏幕截图 2024-09-27 163904](assets/屏幕截图 2024-09-27 163904.png)
 ##### 8. 查找描述中包含"wireless"的产品。
 - ==**代码：**==
 ``` json
@@ -640,7 +640,7 @@ GET /product_catalog/_search
 }
 ```
 - ==**成功操作截图：**==
-[![pAlHqeS.png](https://s21.ax1x.com/2024/09/27/pAlHqeS.png)](https://imgse.com/i/pAlHqeS)
+![屏幕截图 2024-09-27 163955](assets/屏幕截图 2024-09-27 163955.png)
 ##### 9. 查询价格在20美元到100美元之间的所有产品。
 - ==**代码：**==
 ``` json
@@ -657,7 +657,7 @@ GET /product_catalog/_search
 }
 ```
 - ==**成功操作截图：**==
-[![pAlLadS.png](https://s21.ax1x.com/2024/09/27/pAlLadS.png)](https://imgse.com/i/pAlLadS)
+![屏幕截图 2024-09-27 164056](assets/屏幕截图 2024-09-27 164056.png)
 ##### 10. 查找产品名称中包含"Light"的所有产品。
 - ==**代码：**==
 ``` json
@@ -671,7 +671,7 @@ GET /product_catalog/_search
 }
 ```
 - ==**成功操作截图：**==
-[![pAlLdIg.png](https://s21.ax1x.com/2024/09/27/pAlLdIg.png)](https://imgse.com/i/pAlLdIg)
+![屏幕截图 2024-09-27 164141](assets/屏幕截图 2024-09-27 164141.png)
 ***
 #### 3.3.订单记录数据
 ##### 1. 查询所有状态为"completed"的订单的订单ID和总金额。
@@ -687,7 +687,7 @@ GET /order_records/_search
 }
 ```
 - ==**成功操作截图：**==
-[![pAlL0iQ.png](https://s21.ax1x.com/2024/09/27/pAlL0iQ.png)](https://imgse.com/i/pAlL0iQ)
+![屏幕截图 2024-09-27 164643](assets/屏幕截图 2024-09-27 164643.png)
 ##### 2. 查找总金额大于100美元的所有订单。
 - ==**代码：**==
 ``` json
@@ -703,7 +703,7 @@ GET /order_records/_search
 }
 ```
 - ==**成功操作截图：**==
-[![pAlLOoD.png](https://s21.ax1x.com/2024/09/27/pAlLOoD.png)](https://imgse.com/i/pAlLOoD)
+![屏幕截图 2024-09-27 164737](assets/屏幕截图 2024-09-27 164737.png)
 ##### 3. 查询支付方式为"paypal"的订单。
 - ==**代码：**==
 ``` json
@@ -717,7 +717,7 @@ GET /order_records/_search
 }
 ```
 - ==**成功操作截图：**==
-[![pAlLjFe.png](https://s21.ax1x.com/2024/09/27/pAlLjFe.png)](https://imgse.com/i/pAlLjFe)
+![屏幕截图 2024-09-27 164924](assets/屏幕截图 2024-09-27 164924.png)
 ##### 4. 查找订单日期在2024年2月之后的所有订单。
 - ==**代码：**==
 ``` json
@@ -733,7 +733,7 @@ GET /order_records/_search
 }
 ```
 - ==**成功操作截图：**==
-[![pAlOZWj.png](https://s21.ax1x.com/2024/09/27/pAlOZWj.png)](https://imgse.com/i/pAlOZWj)
+![屏幕截图 2024-09-27 165036](assets/屏幕截图 2024-09-27 165036.png)
 ##### 5. 查询包含产品ID为"P001"的订单。
 - ==**代码：**==
 ``` json
@@ -754,7 +754,7 @@ GET /order_records/_search
 }
 ```
 - ==**成功操作截图：**==
-[![pAlzuZt.png](https://s21.ax1x.com/2024/09/28/pAlzuZt.png)](https://imgse.com/i/pAlzuZt)
+![屏幕截图 2024-09-27 171432](assets/屏幕截图 2024-09-27 171432.png)
 ##### 6. 查找所有状态为"cancelled"的订单的客户ID。
 - ==**代码：**==
 ``` json
@@ -770,7 +770,7 @@ GET /order_records/_search
 }
 ```
 - ==**成功操作截图：**==
-[![pAlzMIf.png](https://s21.ax1x.com/2024/09/28/pAlzMIf.png)](https://imgse.com/i/pAlzMIf)
+![屏幕截图 2024-09-27 171517](assets/屏幕截图 2024-09-27 171517.png)
 ##### 7. 查询发货日期在2024年1月15日之前的订单。
 - ==**代码：**==
 ``` json
@@ -786,7 +786,7 @@ GET /order_records/_search
 }
 ```
 - ==**成功操作截图：**==
-[![pAlz8zQ.png](https://s21.ax1x.com/2024/09/28/pAlz8zQ.png)](https://imgse.com/i/pAlz8zQ)
+![屏幕截图 2024-09-27 171613](assets/屏幕截图 2024-09-27 171613.png)
 ##### 8. 查找使用"credit_card"支付的订单。
 - ==**代码：**==
 ``` json
@@ -802,7 +802,7 @@ GET /order_records/_search
 }
 ```
 - ==**成功操作截图：**==
-[![pAlzYss.png](https://s21.ax1x.com/2024/09/28/pAlzYss.png)](https://imgse.com/i/pAlzYss)
+![屏幕截图 2024-09-27 171654](assets/屏幕截图 2024-09-27 171654.png)
 ##### 9. 查询总金额在50美元到200美元之间的所有订单。
 - ==**代码：**==
 ``` json
@@ -819,7 +819,7 @@ GET /order_records/_search
 }
 ```
 - ==**成功操作截图：**==
-[![pAlztLn.png](https://s21.ax1x.com/2024/09/28/pAlztLn.png)](https://imgse.com/i/pAlztLn)
+![屏幕截图 2024-09-27 171729](assets/屏幕截图 2024-09-27 171729.png)
 ##### 10. 查找订单ID中包含"OR01"的所有订单。
 - ==**代码：**==
 ``` json
@@ -833,7 +833,7 @@ GET /order_records/_search
 }
 ```
 - ==**成功操作截图：**==
-[![pAlzUZq.png](https://s21.ax1x.com/2024/09/28/pAlzUZq.png)](https://imgse.com/i/pAlzUZq)
+![屏幕截图 2024-09-27 173339](assets/屏幕截图 2024-09-27 173339.png)
 ***
 ## 三、问题及解决办法：
 > 1、嵌套查询的写法不太了解
